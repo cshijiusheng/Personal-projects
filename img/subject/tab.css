@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tab_main { width: 420px; height:260px; margin: 10px 20px; position: relative; z-index: 2;}
+.hotnews .line{position: absolute; top:51px; left: 20px; background: #82613e;width: 593px; height: 1px;z-index: 1;}
+.tab_main .news_more{display:block; position: absolute; right: -170px; top:12px; width: 19px; height: 19px; background: url("../img/moreBtn.png") no-repeat;}
+.tab_main ul li{ list-style-type:none; width:400px; font-size:12px; height:25px; line-height:25px; color:#666; overflow:hidden; background: url("../img/li-tb.png") no-repeat 4px center;}
+.tab_main ul li a{ text-decoration:none; color:#3a3634;}
+.tab_main ul li:hover a{color: #fff;}
+.tab_main ul li:hover{background: #b89c7b url("../img/li-tb.png") no-repeat 4px center; }
+.tab_main ul li a span{ float:left; width:300px; font-size:12px; overflow: hidden; text-overflow:ellipsis; padding-left:20px;}
+.tab_main ul li a em{ width:40px; height:25px; display:block; float:right; font-size:10px;}
+.tab_main input, section { clear: both; padding-top: 10px; display: none;}
+.tab_main label {color: #333; font-weight: bold; font-size: 14px; display: block; float: left; padding: 10px 10px;}
+.tab_main label:hover { cursor: pointer; color: #ef984a; border-bottom: 1px solid #ef984a;}
+.tab_main #tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4 { display: block;}
+.tab_main input:checked + label {color: #ef984a; text-decoration: none; border-bottom: 1px solid #ef984a;}
